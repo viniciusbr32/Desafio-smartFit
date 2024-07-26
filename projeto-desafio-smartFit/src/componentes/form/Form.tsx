@@ -14,17 +14,17 @@ export function Form({ encontrado, onPeriodoChange, onFilterSubmit, onClearFilte
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const selectedPeriod = event.target.value;
     setPeriodo(selectedPeriod);
-    onPeriodoChange(selectedPeriod); // Atualize o estado do período no componente pai
+    onPeriodoChange(selectedPeriod);
   };
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    onFilterSubmit(); // Chame a função de filtro quando o formulário for enviado
+    onFilterSubmit(); 
   };
 
   const handleClear = () => {
     setPeriodo('');
-    onClearFilter(); // Limpe o filtro
+    onClearFilter(); 
   };
 
   return (
